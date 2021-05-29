@@ -1,3 +1,7 @@
 .idea
 
 db.sqlite3
+
+# cpython cache directory
+*__pycache__*
+*.pyc
