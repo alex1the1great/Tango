@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -10,5 +9,4 @@ def index(request):
 
 
 def about(request):
-    message = 'Rango says here is the about page.<br><a href=/rango/>Home</a>'
-    return HttpResponse(message)
+    return render(request, 'rango/about.html')
